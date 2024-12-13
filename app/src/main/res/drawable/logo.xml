@@ -1,7 +1,17 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="123dp" android:viewportHeight="48" android:viewportWidth="48" android:width="123dp">
-      
-    <path android:fillAlpha="0.2" android:fillColor="#1649A7" android:pathData="M24,24m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0"/>
-      
-    <path android:fillColor="url(#pattern0_9_93)" android:pathData="M9,11h31v28h-31z"/>
-    
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="123dp"
+    android:height="123dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Background Circle with Alpha -->
+    <path
+        android:fillAlpha="0.2"
+        android:fillColor="#1649A7"
+        android:pathData="M24,24m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0"/>
+
+    <!-- Rectangle with Solid Fill Color -->
+    <path
+        android:fillColor="#4A90E2"
+        android:pathData="M9,11h31v28h-31z"/>
 </vector>

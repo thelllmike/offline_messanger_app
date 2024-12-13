@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_create_thread"
+        android:title="Create new thread"
+        android:icon="@drawable/ic_create" />
+    <item
+        android:id="@+id/action_delete"
+        android:title="Delete Selected"
+        android:icon="@drawable/ic_delete" />
+</menu>
