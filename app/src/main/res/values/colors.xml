@@ -1,3 +1,4 @@
 <resources>
     <color name="blue">#105EEA</color> <!-- Customize the shade of blue if needed -->
+    <color name="primary_blue">#105EEA</color>
 </resources>

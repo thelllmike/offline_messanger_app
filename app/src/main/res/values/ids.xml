@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="messageListLayout" type="id" />
+    <item name="messageItem" type="id" />
+    <item name="chatTitleLayout" type="id" />
+</resources>

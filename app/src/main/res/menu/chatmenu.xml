@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- Search Option (Visible when no message is selected) -->
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom" />
+
+    <!-- Options when a message is selected -->
     <item
         android:id="@+id/action_share"
         android:title="Share Selected"
-        android:icon="@drawable/ic_share" />
+        android:icon="@drawable/ic_share"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/action_edit"
+        android:title="Edit Selected"
+        android:icon="@drawable/ic_edit"
+        android:visible="false" />
 
     <item
         android:id="@+id/action_upload"
         android:title="Upload Selected"
-        android:icon="@drawable/ic_upload" />
+        android:icon="@drawable/ic_upload"
+        android:visible="false" />
 
     <item
         android:id="@+id/action_delete"
         android:title="Delete Selected"
-        android:icon="@drawable/ic_delete" />
+        android:icon="@drawable/ic_delete"
+        android:visible="false" />
 
 </menu>

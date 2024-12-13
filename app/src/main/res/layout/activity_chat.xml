@@ -32,6 +32,7 @@
             android:paddingStart="16dp">
 
             <TextView
+                android:id="@+id/chatTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Post plan for December"
@@ -39,6 +40,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/chatSubtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="This contains posts for the December"
@@ -58,11 +60,13 @@
     <!-- Messages List -->
     <ScrollView
         android:id="@+id/chatScrollView"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="64dp"
         app:layout_constraintTop_toBottomOf="@id/headerLayout"
-        app:layout_constraintBottom_toTopOf="@id/inputLayout">
+        app:layout_constraintBottom_toTopOf="@id/inputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -72,18 +76,20 @@
 
             <!-- Example Message Item -->
             <LinearLayout
+                android:id="@+id/messageItem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginBottom="8dp">
 
                 <CheckBox
-                    android:id="@+id/checkbox1"
+                    android:id="@+id/messageCheckbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/ic_checkbox" />
 
                 <TextView
+                    android:id="@+id/messageText"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -98,11 +104,13 @@
     <!-- Input Section with Attachment and Send Button -->
     <LinearLayout
         android:id="@+id/inputLayout"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="8dp"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <!-- Attachment Icon -->
         <ImageView
@@ -130,7 +138,7 @@
             android:layout_height="48dp"
             android:padding="12dp"
             android:background="@drawable/circle_blue_background"
-
+            android:src="@drawable/ic_send"
             android:contentDescription="Send"/>
     </LinearLayout>
 
